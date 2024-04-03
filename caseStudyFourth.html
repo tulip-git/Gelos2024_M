@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gelos.js"></script>
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="anim" id="anim"></div>
+        <div class="anim" id="anim2"></div>
+        <div class="anim" id="anim3"></div>
+
+        <div class="nav" id="navbar"><a href="/index.html"><img src="images/logo.png" alt="logo" /></a>
+            <nav class="topnav" id="myTopnav">
+
+                <a href="#">About the company</a>
+                <a href="#">Offerings</a>
+                <a href="#">Company Values</a>
+                <a href="#">Contact Us</a>
+                <div>
+                    <!-- empty div for grid -->
+                </div>
+                <a class="search">
+                    <div class="search-container searchRes">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <i class="fa fa-bars"></i></a>
+            </nav>
+            <a class="responsiveSearch">
+                <div class="search-container searchRes">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main class="internalMain">
+        The "Contact Us" page on a website serves as a vital means for users to connect with the website owner or
+        organization. It typically includes essential contact information such as a contact form, email address, phone
+        number, and physical address. The page should have a clear call to action, prompting users to reach out with
+        phrases like "Get in Touch" or "Contact Us." It's important to ensure that the page is designed to be
+        mobile-friendly and accessible across different devices. Additionally, providing assurances about data privacy
+        and security can build trust with users. Optional elements like a map or directions, links to social media
+        profiles, and a feedback mechanism can enhance the user experience. Regularly updating the contact information
+        and ensuring accessibility for all users, including those with disabilities, are also important considerations
+        for an effective "Contact Us" page.
+    </main>
+    <footer>
+        <img />
+        <div>© Gelos NSW 2021</div>
+    </footer>
+</body>
+
+</html>
+<script>
+    // When the user scrolls the page, execute stickyNav
+    window.onscroll = function () { stickyNav() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyNav() {
+        // alert("hello");
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("stickyNav");
+            navbar.classList.remove("nav");
+        } else {
+            navbar.classList.remove("stickyNav");
+            navbar.classList.add("nav");
+        }
+    }
+</script>

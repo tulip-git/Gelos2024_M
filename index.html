@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gelos.js"></script>
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="anim" id="anim"></div>
+        <div class="anim" id="anim2"></div>
+        <div class="anim" id="anim3"></div>
+
+        <div class="nav" id="navbar"><a href="/index.html"><img src="images/logo.png" alt="logo" /></a>
+            <nav class="topnav" id="myTopnav">
+
+                <a href="#about">About the company</a>
+                <a href="#offerings">Offerings</a>
+                <a href="#values">Company Values</a>
+                <a href="#contactUs">Contact Us</a>
+                <div>
+                    <!-- empty div for grid -->
+                </div>
+                <a class="search">
+                    <div class="search-container searchRes">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <i class="fa fa-bars"></i></a>
+            </nav>
+            <a class="responsiveSearch">
+                <div class="search-container searchRes">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </a>
+        </div>
+
+    </header>
+    <main>
+        <button type="button" class="btn btn-floating" id="btn-back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </button>
+
+        <section class="col-12 Padding-3" id="about">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-flex">
+                            <div class="carousel-img ">
+                                <img src="/images/improving.jpg" class="d-block w-100" alt="improving">
+                            </div>
+                            <div class="carousel-caption  d-md-block carousel-Right">
+                                <h5 class="Padding-3">Improving operations through Gelos products & services</h5>
+                                <button class="btnMy btn-rounded col-6 mx-auto"
+                                    onclick="location.href='/caseStudyFirst.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-flex">
+                            <div class="carousel-img ">
+                                <img src="/images/solving.jpg" class="d-block w-100" alt="solving">
+                            </div>
+                            <div class="carousel-caption  d-md-block carousel-Right">
+                                <h5 class="Padding-3">Solving business problems</h5>
+                                <button class="btnMy btn-rounded col-6 mx-auto"
+                                    onclick="location.href='/caseStudySecond.html'">Know More</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="col-12 Padding-3 second" id="offerings">
+            <h1>Company Offerings</h1>
+            <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Digital Transformation
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                        <div class="accordion-body">To help our clients leverage the state-of-art technologies, we
+                            provide a tailored approach to enable change in the digital space. Our prior works include
+                            developing mobile applications, website applications, and organisation software development,
+                            among other digital capabilities. To know more,
+                            <a href="#contactUs">contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Cloud Services
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Our Cloud programs include a range of services from full application
+                            development platforms to servers, storage, and virtual desktops. We offer the following:
+                            <ul>
+                                <li> Software as a service (SaaS)</li>
+                                <li> Platform as a service (PaaS)</li>
+                                <li> Infrastructure as a service (IaaS).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Artificial intelligence
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Artificial intelligence services at Gelos can help you drive smart
+                            evolution of your workflows, technology and the entire organisation. Our industry experts
+                            help you implement a data-first strategy, augment with third-party sources, and
+                            operationalise and accelerate AI integration across your enterprise to generate positive
+                            business growth.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="col-12 Padding-3 third" id="values">
+            <h1>Company Values</h1>
+            <div class="mainThird">
+
+                <div class="overSquar" id="overSquarFirst" onclick="overSquarFunc('overSquarFirst')">Integrity </div>
+                <div class="overSquarOver" id="overSquarFirstOver" onclick="overSquarFuncDefault('overSquarFirstOver')">
+                    We are
+                    committed to our values and protect our company at an organisational level.</div>
+                <div class="overSquar" id="overSquarSecond" onclick="overSquarFunc('overSquarSecond')">Inclusivity
+                </div>
+                <div class="overSquarOver" id="overSquarSecondOver"
+                    onclick="overSquarFuncDefault('overSquarSecondOver')">We
+                    strongly believe in diversity as the core of our growth. Our policies hold zero tolerance towards
+                    discrimination.</div>
+                <div class="overSquar" id="overSquarThird" onclick="overSquarFunc('overSquarThird')">Innovation</div>
+                <div class="overSquarOver" id="overSquarThirdOver" onclick="overSquarFuncDefault('overSquarThirdOver')">
+                    Innovation
+                    is one of our core values. Our culture imbibes curiosity, technological ingenuity and adaptability.
+                </div>
+            </div>
+        </section>
+        <section class="col-12 Padding-3 ">
+            <div class="mainFourth">
+                <div class="address">
+                    <h1>Contact Us</h1>
+                    <p>Improving operations through Gelos products & services</p>
+                    <button class="padding btnReverse btn-rounded col-6 mx-auto"
+                        onclick="location.href='/caseStudyFirst.html'">Read More</button>
+
+                </div>
+                <div class="contact" id="contactUs">
+                    <form>
+                        <div>
+                            <div class="padding">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter name" name="name"
+                                    pattern="[A-Za-z. ]{1,100}" title="Upper case and lower case letters, space, dot"
+                                    required>
+                            </div>
+                            <div class="padding">
+                                <label for="number" class="form-label">Number:</label>
+                                <input type="number" class="form-control" placeholder="Enter number" name="number"
+                                    maxlength="10" required>
+                            </div>
+                            <div class="padding">
+                                <label for="message" class="form-label">Message:</label>
+                                <input type="text" class="form-control" placeholder="Enter message" name="message"
+                                    maxlength="300" required>
+                            </div>
+                            <div class="col-12 btnDiv">
+                                <button type="submit" class="btnMy btn-rounded col-6 mx-auto">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img alt="footer" />
+        <div>© Gelos NSW 2021</div>
+    </footer>
+</body>
+
+</html>
+<script>
+    // When the user scrolls the page, execute stickyNav
+    window.onscroll = function () {
+        stickyNav();
+        scrollFunction();
+    };
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyNav() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("stickyNav");
+            navbar.classList.remove("nav");
+        } else {
+            navbar.classList.remove("stickyNav");
+            navbar.classList.add("nav");
+        }
+    }
+
+    const animated = document.querySelector("#anim");
+
+    animated.onanimationend = () => {
+        animated.style.display = 'none'
+        document.querySelector("#anim2").style.display = 'none'
+        document.querySelector("#anim3").style.display = 'none'
+    };
+
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
