@@ -1,9 +1,9 @@
 @font-face {
   font-family: "CustomFont";
-  src: url("fonts/Tinos-Bold.ttf");
-  src: url("fonts/Tinos-BoldItalic.ttf");
-  src: url("fonts/Tinos-Italic.ttf");
-  src: url("fonts/Tinos-Regular.ttf");
+  src: url("../fonts/Tinos-Bold.ttf");
+  src: url("../fonts/Tinos-BoldItalic.ttf");
+  src: url("../fonts/Tinos-Italic.ttf");
+  src: url("../fonts/Tinos-Regular.ttf");
 }
 .tinos-regular {
   font-family: "Tinos", serif;
@@ -41,7 +41,7 @@ body {
   padding: 0.4em;
 }
 header {
-  background-image: url(images/banner.jpg);
+  background-image: url(../images/banner.jpg);
   background-size: cover;
   height: 470px;
   width: 100%;
@@ -102,7 +102,7 @@ header {
   padding-top: 0.6em;
 }
 .stickyNav img {
-  content: url("images/Capture.PNG") !important;
+  content: url("../images/Capture.PNG") !important;
 }
 .nav ul,
 .stickyNav ul {
