@@ -102,7 +102,7 @@ header {
   padding-top: 0.6em;
 }
 .stickyNav img {
-  content: url("/images/Capture.PNG") !important;
+  content: url("images/Capture.PNG") !important;
 }
 .nav ul,
 .stickyNav ul {
@@ -307,7 +307,7 @@ footer {
   padding-right: 0.6em;
 }
 footer img {
-  content: url("/images/Capture.PNG") !important;
+  content: url("images/Capture.PNG") !important;
   width: 8em;
   height: auto;
 }
