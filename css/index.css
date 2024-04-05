@@ -140,7 +140,7 @@ header {
   grid-template-columns: auto auto auto auto 1.2fr 1fr;
 }
 #myTopnav {
-  grid-template-columns: auto auto auto auto auto 1fr;
+  grid-template-columns: auto auto auto auto auto auto auto;
 }
 .topnav .icon {
   display: none;
