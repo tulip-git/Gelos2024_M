@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/bootstrap.min.js"></script>
@@ -19,13 +19,13 @@
         <div class="anim" id="anim2"></div>
         <div class="anim" id="anim3"></div>
 
-        <div class="nav" id="navbar"><a href="/index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav" id="navbar"><a href="index.html"><img src="images/logo.png" alt="logo" /></a>
             <nav class="topnav" id="myTopnav">
-
-                <a href="#">About the company</a>
-                <a href="#">Offerings</a>
-                <a href="#">Company Values</a>
-                <a href="#">Contact Us</a>
+                <a href="index.html">Home</a>
+                <a href="#about">About the company</a>
+                <a href="#offerings">Offerings</a>
+                <a href="#values">Company Values</a>
+                <a href="#contactUs">Contact Us</a>
                 <div>
                     <!-- empty div for grid -->
                 </div>
@@ -70,8 +70,10 @@
 </html>
 <script>
     // When the user scrolls the page, execute stickyNav
-    window.onscroll = function () { stickyNav() };
-
+    window.onscroll = function () {
+        stickyNav();
+        scrollFunction();
+    };
     // Get the navbar
     var navbar = document.getElementById("navbar");
 
@@ -80,7 +82,6 @@
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function stickyNav() {
-        // alert("hello");
         if (window.pageYOffset > sticky) {
             navbar.classList.add("stickyNav");
             navbar.classList.remove("nav");
@@ -88,5 +89,34 @@
             navbar.classList.remove("stickyNav");
             navbar.classList.add("nav");
         }
+    }
+
+    const animated = document.querySelector("#anim");
+
+    animated.onanimationend = () => {
+        animated.style.display = 'none'
+        document.querySelector("#anim2").style.display = 'none'
+        document.querySelector("#anim3").style.display = 'none'
+    };
+
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 </script>
