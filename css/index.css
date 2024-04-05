@@ -139,7 +139,7 @@ header {
   grid-template-rows: 1fr;
   grid-template-columns: auto auto auto auto 1.2fr 1fr;
 }
-#myTopNavInternal {
+.myTopNavInternal {
   grid-template-columns: auto auto auto auto auto auto auto;
 }
 .topnav .icon {
@@ -147,6 +147,7 @@ header {
 }
 .topnav .search-container {
   float: right;
+  width: 13.2em;
 }
 .responsiveSearch {
   display: none;
@@ -426,6 +427,8 @@ footer img {
   }
   header {
     height: auto;
+    display: grid;
+    grid-template-rows: 1fr .5fr;
   }
   .Padding-3 {
     padding-bottom: 3em;
@@ -451,22 +454,19 @@ footer img {
     top: 6em;
     background-color: #daa95d;
     z-index: 800;
-    /* width: 100%; */
     width: 100%;
     grid-template-columns: auto;
   }
   .topnav.responsive a {
-    /* float: none; */
     display: block;
-    /* text-align: left; */
   }
   .search {
     display: none !important;
   }
   .responsiveSearch {
     display: block;
-    right: 4em;
-    position: absolute;
+    left: .6em;
+    position: relative;
   }
   .stickyNav a.icon {
     top: 1em;
@@ -638,7 +638,7 @@ footer img {
   .responsiveSearch input[type="text"], .topnav input[type="text"] {
     width: 8em;
   }
-  .responsiveSearch{
+  /* .responsiveSearch{
     display: none;
-  }
+  } */
 }

@@ -24,7 +24,7 @@
         <div class="anim" id="anim3"></div>
 
         <div class="nav" id="navbar"><a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-            <nav class="topnav" id="myTopnav">
+            <nav class="topnav" id="myTopNav">
 
                 <a href="#about">About the company</a>
                 <a href="#offerings">Offerings</a>
@@ -44,16 +44,16 @@
                 <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                     <i class="fa fa-bars"></i></a>
             </nav>
-            <a class="responsiveSearch">
-                <div class="search-container searchRes">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </a>
-        </div>
 
+        </div>
+        <a class="responsiveSearch">
+            <div class="search-container searchRes">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </a>
     </header>
     <main>
         <button type="button" class="btn btn-floating" id="btn-back-to-top">
@@ -200,7 +200,7 @@
                         <div>
                             <div class="padding">
                                 <label for="name" class="form-label">Name:</label>
-                                <input type="text" class="form-control" placeholder="Enter name" id="name" 
+                                <input type="text" class="form-control" placeholder="Enter name" id="name"
                                     pattern="[A-Za-z. ]{1,100}" title="Upper case and lower case letters, space, dot"
                                     required>
                             </div>
