@@ -640,7 +640,7 @@ footer img {
   .responsiveSearch input[type="text"], .topnav input[type="text"] {
     width: 8em;
   }
-  /* .responsiveSearch{
-    display: none;
-  } */
+  .search-container.searchRes {
+    width: 10.8em;
+  }
 }
