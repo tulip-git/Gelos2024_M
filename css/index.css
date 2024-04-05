@@ -147,7 +147,6 @@ header {
 }
 .topnav .search-container {
   float: right;
-  width: 13.2em;
 }
 .responsiveSearch {
   display: none;
