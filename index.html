@@ -38,15 +38,15 @@
                         <form action="/action_page.php">
                             <label for="searchTop">search</label>
                             <input type="text" placeholder="Search.." id="searchTop">
-                            <button type="submit">
-                                <label class="visually-hidden">Search</label>
+                            <button type="submit" id="submitBtn">
+                                <label for="submitBtn" class="visually-hidden">Search</label>
                                 <i class="fa fa-search"></i></button>
 
                         </form>
                     </div>
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-                    <label class="visually-hidden">Responsiv Nav Bar</label>
+                <a id="iconClick" href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <label for="iconClick" class="visually-hidden">Responsiv Nav Bar</label>
                     <i class="fa fa-bars"></i></a>
             </nav>
 
@@ -57,8 +57,8 @@
                 <form action="/action_page.php" name="form">
                     <label for="searchRes" class="sr-only">search</label>
                     <input type="text" placeholder="Search.." id="searchRes">
-                    <button type="submit">
-                        <label class="visually-hidden">Search</label>
+                    <button id="btnSearch" type="submit">
+                        <label for="btnSearch" class="visually-hidden">Search</label>
                         <i class="fa fa-search"></i>
                     </button>
                 </form>
@@ -66,8 +66,8 @@
         </div>
     </header>
     <main>
-        <button type="button" class="btn btn-floating" id="btn-back-to-top">
-            <label class="visually-hidden">Back to top</label>
+        <button  id="btnBackTop type="button" class="btn btn-floating" id="btn-back-to-top">
+            <label for="btnBackTop" class="visually-hidden">Back to top</label>
             <i class="fa fa-angle-double-up"></i>
         </button>
 
