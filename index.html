@@ -38,8 +38,8 @@
                         <form action="/action_page.php">
                             <label for="searchTop" class="visually-hidden">search</label>
                             <input type="text" placeholder="Search.." id="searchTop">
-                            <button id="submitBtn" type="submit" >
-                                <label for="submitBtn">Search</label>
+                            <button id="submitBtn" type="submit">
+                                <p for="submitBtn" class="visually-hidden">Search</p>
                                 <i class="fa fa-search"></i></button>
 
                         </form>
@@ -180,7 +180,10 @@
             <h1>Company Values</h1>
             <div class="mainThird">
 
-                <div class="overSquar" id="overSquarFirst" onclick="overSquarFunc('overSquarFirst')" OnKeyPress="overSquarFunc('overSquarFirst')">Integrity </div>
+                <div class="overSquar" id="overSquarFirst" onclick="overSquarFunc('overSquarFirst')"
+                    OnKeyPress="overSquarFunc('overSquarFirst')">
+                    <h3>Integrity </h3>
+                </div>
                 <div class="overSquarOver" id="overSquarFirstOver" onclick="overSquarFuncDefault('overSquarFirstOver')">
                     We are
                     committed to our values and protect our company at an organisational level.</div>
