@@ -23,7 +23,7 @@
         <div class="anim" id="anim2"></div>
         <div class="anim" id="anim3"></div>
 
-        <div class="nav" id="navbar"><a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav" id="navbar"><a href="index.html"><img src="images/logo.png" alt="logo" ></img></a>
             <nav class="topnav" id="myTopNav">
 
                 <a href="#about">About the company</a>
@@ -206,8 +206,8 @@
                             </div>
                             <div class="padding">
                                 <label for="number" class="form-label">Number:</label>
-                                <input type="number" class="form-control" placeholder="Enter number" id="number"
-                                    maxlength="10" required>
+                                <input pattern="/d*" class="form-control" placeholder="Enter number" id="number"
+                                    maxlength="10" title="Enter the numbers" required>
                             </div>
                             <div class="padding">
                                 <label for="message" class="form-label">Message:</label>
@@ -224,61 +224,61 @@
         </section>
     </main>
     <footer>
-        <img alt="footer" />
+        <img src="#" alt="footer">
         <div>© Gelos NSW 2021</div>
     </footer>
+    <script>
+        // When the user scrolls the page, execute stickyNav
+        window.onscroll = function () {
+            stickyNav();
+            scrollFunction();
+        };
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNav() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("stickyNav");
+                navbar.classList.remove("nav");
+            } else {
+                navbar.classList.remove("stickyNav");
+                navbar.classList.add("nav");
+            }
+        }
+
+        const animated = document.querySelector("#anim");
+
+        animated.onanimationend = () => {
+            animated.style.display = 'none'
+            document.querySelector("#anim2").style.display = 'none'
+            document.querySelector("#anim3").style.display = 'none'
+        };
+
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
-<script>
-    // When the user scrolls the page, execute stickyNav
-    window.onscroll = function () {
-        stickyNav();
-        scrollFunction();
-    };
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function stickyNav() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("stickyNav");
-            navbar.classList.remove("nav");
-        } else {
-            navbar.classList.remove("stickyNav");
-            navbar.classList.add("nav");
-        }
-    }
-
-    const animated = document.querySelector("#anim");
-
-    animated.onanimationend = () => {
-        animated.style.display = 'none'
-        document.querySelector("#anim2").style.display = 'none'
-        document.querySelector("#anim3").style.display = 'none'
-    };
-
-    let mybutton = document.getElementById("btn-back-to-top");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    function scrollFunction() {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", backToTop);
-
-    function backToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
