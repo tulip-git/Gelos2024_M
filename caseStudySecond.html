@@ -29,29 +29,42 @@
                 <div>
                     <!-- empty div for grid -->
                 </div>
-                <a class="search">
+                <div class="search">
                     <div class="search-container searchRes">
                         <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <label for="searchTop" class="visually-hidden">search</label>
+                            <input type="text" placeholder="Search.." id="searchTop">
+                            <button id="submitBtn" type="submit">
+                                <b class="visually-hidden">Search</b>
+                                <i class="fa fa-search"></i>
+                            </button>
+
                         </form>
                     </div>
-                </a>
-                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-                    <i class="fa fa-bars"></i></a>
-            </nav>
-            <a class="responsiveSearch">
-                <div class="search-container searchRes">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
                 </div>
-            </a>
+                <a id="iconClick" href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <p class="visually-hidden">Responsiv Nav Bar</p>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="responsiveSearch">
+            <div class="search-container searchRes">
+                <b class="sr-only">Form</b>
+                <form action="/action_page.php" id="form" name="form">
+                    <label for="searchRes" class="sr-only">search</label>
+                    <input type="text" placeholder="Search.." id="searchRes">
+                    <button id="btnSearch" type="submit">
+                        <b class="visually-hidden">Search</b>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
     <main class="internalMain">
         <button type="button" class="btn btn-floating" id="btn-back-to-top">
+            <b class="visually-hidden">Back to top</b>
             <i class="fa fa-angle-double-up"></i>
         </button>
         <h1>Solving business problems</h1>

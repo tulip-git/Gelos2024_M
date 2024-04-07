@@ -29,42 +29,65 @@
                 <div>
                     <!-- empty div for grid -->
                 </div>
-                <a class="search">
+                <div class="search">
                     <div class="search-container searchRes">
                         <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <label for="searchTop" class="visually-hidden">search</label>
+                            <input type="text" placeholder="Search.." id="searchTop">
+                            <button id="submitBtn" type="submit">
+                                <b class="visually-hidden">Search</b>
+                                <i class="fa fa-search"></i>
+                            </button>
+
                         </form>
                     </div>
-                </a>
-                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-                    <i class="fa fa-bars"></i></a>
-            </nav>
-            <a class="responsiveSearch">
-                <div class="search-container searchRes">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
                 </div>
-            </a>
+                <a id="iconClick" href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <p class="visually-hidden">Responsiv Nav Bar</p>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="responsiveSearch">
+            <div class="search-container searchRes">
+                <b class="sr-only">Form</b>
+                <form action="/action_page.php" id="form" name="form">
+                    <label for="searchRes" class="sr-only">search</label>
+                    <input type="text" placeholder="Search.." id="searchRes">
+                    <button id="btnSearch" type="submit">
+                        <b class="visually-hidden">Search</b>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
     <main class="internalMain">
         <button type="button" class="btn btn-floating" id="btn-back-to-top">
+            <b class="visually-hidden">Back to top</b>
             <i class="fa fa-angle-double-up"></i>
         </button>
         <h1>Welcome to Gelos Company</h1>
-        <p> 
-            At Gelos Company, we pride ourselves on delivering exceptional services and innovative solutions to our clients. With a team of highly skilled professionals and a commitment to excellence, we strive to exceed expectations and drive success in every project we undertake.
-            
-            Our company specializes in [mention your industry or area of expertise], providing cutting-edge [mention products or services] that are tailored to meet the unique needs of our clients. Whether you're a small startup or a large corporation, we have the expertise and resources to help you achieve your goals and stay ahead in today's competitive market.
-            
-            What sets us apart is our dedication to quality, integrity, and customer satisfaction. We believe in building long-term relationships with our clients, understanding their challenges, and delivering solutions that make a real difference.
-            
-            Explore our website to learn more about our services, past projects, and the industries we serve. Feel free to contact us for any inquiries or to discuss how we can collaborate to bring your ideas to life and drive your business forward.
-            
-            Thank you for choosing Gelos Company. We look forward to partnering with you and helping you achieve success.</p>
+        <p>
+            At Gelos Company, we pride ourselves on delivering exceptional services and innovative solutions to our
+            clients. With a team of highly skilled professionals and a commitment to excellence, we strive to exceed
+            expectations and drive success in every project we undertake.
+
+            Our company specializes in [mention your industry or area of expertise], providing cutting-edge [mention
+            products or services] that are tailored to meet the unique needs of our clients. Whether you're a small
+            startup or a large corporation, we have the expertise and resources to help you achieve your goals and stay
+            ahead in today's competitive market.
+
+            What sets us apart is our dedication to quality, integrity, and customer satisfaction. We believe in
+            building long-term relationships with our clients, understanding their challenges, and delivering solutions
+            that make a real difference.
+
+            Explore our website to learn more about our services, past projects, and the industries we serve. Feel free
+            to contact us for any inquiries or to discuss how we can collaborate to bring your ideas to life and drive
+            your business forward.
+
+            Thank you for choosing Gelos Company. We look forward to partnering with you and helping you achieve
+            success.</p>
     </main>
     <footer>
         <img />
