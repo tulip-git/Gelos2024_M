@@ -87,6 +87,9 @@ header {
   align-items: end;
   background-color: #5d686e42;
 }
+#logoSection {
+  flex: 20%;
+}
 .stickyNav {
   position: fixed;
   top: 0;
@@ -144,6 +147,7 @@ header {
 }
 #myTopNav {
   grid-template-columns: auto auto auto auto 1fr 1fr;
+  flex: 75%;
 }
 .topnav .icon {
   display: none;
