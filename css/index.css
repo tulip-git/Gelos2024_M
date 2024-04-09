@@ -148,6 +148,7 @@ header {
 #myTopNav {
   grid-template-columns: auto auto auto auto 1fr 1fr;
   flex: 75%;
+  padding-right: 3em;
 }
 .topnav .icon {
   display: none;
