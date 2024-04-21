@@ -82,10 +82,9 @@ header {
 }
 .nav {
   overflow: hidden;
-  /* top: 0; */
-  /* padding: 1em !important; */
   align-items: end;
-  background-color: #5d686e42;
+  /* background-color: #5d686e42; */
+  background-color: #5d686e7a;
 }
 #logoSection {
   flex: 20%;
@@ -237,6 +236,11 @@ header {
 .accordion-body ul li {
   list-style-type: decimal;
 }
+.accordion-button:hover 
+{
+text-decoration: underline;
+background-color: rgba(235, 180, 94, 0.43) !important;
+} 
 /* sec Third */
 .third h1,
 .second h1 {
